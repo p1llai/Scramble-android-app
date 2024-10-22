@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- 7 Drop Boxes (Vertically Aligned) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/box1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/box7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="_"
+            android:editable="false"
+            android:layout_marginEnd="4dp" />
+    </LinearLayout>
+
+    <!-- Random Characters (Horizontally Aligned) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/char1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="A"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="E"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="F"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/char7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="G"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Word"
+        android:layout_marginTop="20dp" />
+
+    <!-- Feedback and Score -->
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
